@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Script from "next/script";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "sonner";
 
 import Footer from "@/components/ui/Footer";
@@ -40,6 +41,7 @@ export default function RootLayout({
 				{children}
 
 				<Footer />
+				<SpeedInsights />
 				<Toaster
 					richColors
 					position="top-center"
